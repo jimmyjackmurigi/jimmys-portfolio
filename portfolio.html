@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimmy's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    
+    <div id="loader" class="loader">Welcome to Jimmy's World...</div>
+
+    
+    <div id="main-content" style="display: none;">
+
+        <video autoplay muted loop id="bg-video">
+            <source src="Blue Dark Blue Gradient Color and Style Video Background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        
+        
+        <header class="profile">
+            <img src="black teen 19 handsome looking official for portfolio.jpg" alt="Profile Picture" class="profile-pic">
+            <div class="profile-description">
+                <h1>Jimmy Jackson</h1>
+                <p>Innovator | Entrepreneur | Tech Enthusiast</p>
+            </div>
+        </header>
+
+        
+        <section id="achievements">
+            <div class="achievement-box square" onclick="togglePopup('024-global')">
+                <h2>024 Global</h2>
+                <p>Empowering businesses through linkages, marketing, and e-commerce...</p>
+            </div>
+            <div class="achievement-box square" onclick="togglePopup('quarter-acre')">
+                <h2>Quarter Acre Farm Project</h2>
+                <p>Focused on sustainable farming, community empowerment, and climate resilience...</p>
+            </div>
+            <div class="achievement-box rectangle" onclick="togglePopup('red-cross')">
+                <h2>Red Cross Volunteer</h2>
+                <p>Dedicated to humanitarian efforts, emergency response, and disaster relief...</p>
+            </div>
+            <div class="achievement-box circle" onclick="togglePopup('plp-learning')">
+                <h2>PLP Learning</h2>
+                <p>Providing education and leadership opportunities...</p>
+            </div>
+        </section>
+
+    
+        <section id="contact">
+            <button class="close-btn" onclick="closeContact()">X</button>
+            <h3>Get in Touch</h3>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="image-grid">
+                <img src="certificate for project management from aati to jimmy jackson for completing project management.jpg" alt="Gallery Image" onclick="focusImage(this)">
+                <img src="certificate for project management from aati to jimmy jackson for completing tech sale use purple.jpg" alt="Gallery Image" onclick="focusImage(this)">
+            </div>
+            <button class="certificates-btn">Certificates (➕)</button>
+        </section>
+
+    
+        <section id="social-links">
+            <h3>Where You Can Find Me</h3>
+            <a href="#" class="social-icon">Facebook</a>
+            <a href="#" class="social-icon">LinkedIn</a>
+            <a href="#" class="social-icon">Instagram</a>
+        </section>
+
+        
+        <section id="submission">
+            <img src="black teen 19 handsome looking official for portfolio.jpg" class="mini-profile-pic">
+            <h3>Submit a text to get to know me more</h3>
+            <form>
+                <input type="text" placeholder="Your Inquiry" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    
+    <script src="portfolio.js"></script>
+</body>
+</html>
